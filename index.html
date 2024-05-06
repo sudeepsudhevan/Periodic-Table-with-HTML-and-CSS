@@ -1,0 +1,238 @@
+<!-- Periodic table using html and css -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+</head>
+
+<body>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            font: 1.2em sans-serif;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .left-div {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            width: 80%;
+            gap: 5px;
+            background-color: aqua;
+        }
+
+        .right-div {
+            width: 20%;
+        }
+
+        .element {
+            text-align: center;
+        }
+
+        span {
+            font-size: 0.5em;
+        }
+
+        .alkali-metal {
+            background-color: rgb(1, 56, 59);
+        }
+
+        .alkaline-earth {
+            background-color: aqua;
+        }
+
+        .actinide {
+            background-color: rgb(5, 247, 146);
+        }
+
+        .lanthanide {
+            background-color: rgb(34, 133, 4);
+        }
+
+        .transition-metal {
+            background-color: rgb(52, 231, 7);
+        }
+
+        .post-transition-metal {
+            background-color: yellow;
+        }
+
+        .metalloid {
+            background-color: orange;
+        }
+
+        .reactive-non-metal {
+            background-color: red;
+        }
+
+        .noble-gas {
+            background-color: purple;
+        }
+
+        .unknown {
+            background-color: brown;
+        }
+
+        .box {
+            margin-top: 2px;
+        }
+
+        .box>p {
+            padding: 5px;
+            margin: 0;
+        }
+    </style>
+    <h1 style="text-align: center;color: red;">Periodic Table of Elements</h1>
+
+    <div class="container">
+        <!-- left division -->
+        <div class="left-div">
+            <div class="element" style="grid-row: 1;grid-column: 1;">H <br><span>Hydrogen</span></div>
+            <div class="element" style="grid-row: 1;grid-column: 18;">He <br><span>Helium</span></div>
+
+            <div class="element" style="grid-row: 2;grid-column: 1;">Li <br><span>Lithium</span></div>
+            <div class="element" style="grid-row: 2;grid-column: 2;">Be <br><span>Beryllium</span></div>
+            <div class="element" style="grid-row: 2;grid-column: 13;">B <br><span>Boron</span></div>
+            <div class="element" style="grid-row: 2;grid-column: 14;">C <br><span>Carbon</span></div>
+            <div class="element" style="grid-row: 2;grid-column: 15;">N <br><span>Nitrogen</span></div>
+            <div class="element" style="grid-row: 2;grid-column: 16;">O <br><span>Oxygen</span></div>
+            <div class="element" style="grid-row: 2;grid-column: 17;">F <br><span>Fluorine</span></div>
+            <div class="element" style="grid-row: 2;grid-column: 18;">Ne <br><span>Neon</span></div>
+
+            <div class="element" style="grid-row: 3;grid-column: 1;">Na <br><span>Sodium</span></div>
+            <div class="element" style="grid-row: 3;grid-column: 2;">Mg <br><span>Magnesium</span></div>
+            <div class="element" style="grid-row: 3;grid-column: 13;">Al <br><span>Aluminum</span></div>
+            <div class="element" style="grid-row: 3;grid-column: 14;">Si <br><span>Silicon</span></div>
+            <div class="element" style="grid-row: 3;grid-column: 15;">P <br><span>Phosphorus</span></div>
+            <div class="element" style="grid-row: 3;grid-column: 16;">S <br><span>Sulfur</span></div>
+            <div class="element" style="grid-row: 3;grid-column: 17;">Cl <br><span>Chlorine</span></div>
+            <div class="element" style="grid-row: 3;grid-column: 18;">Ar <br><span>Argon</span></div>
+
+            <div class="element" style="grid-row: 4;grid-column: 1;">K <br><span>Potassium</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 2;">Ca <br><span>Calcium</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 3;">Sc <br><span>Scandium</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 4;">Ti <br><span>Titanium</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 5;">V <br><span>Vanadium</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 6;">Cr <br><span>Chromium</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 7;">Mn <br><span>Manganese</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 8;">Fe <br><span>Iron</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 9;">Co <br><span>Cobalt</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 10;">Ni <br><span>Nickel</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 11;">Cu <br><span>Copper</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 12;">Zn <br><span>Zinc</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 13;">Ga <br><span>Gallium</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 14;">Ge <br><span>Germanium</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 15;">As <br><span>Arsenic</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 16;">Se <br><span>Selenium</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 17;">Br <br><span>Bromine</span></div>
+            <div class="element" style="grid-row: 4;grid-column: 18;">Kr <br><span>Krypton</span></div>
+
+            <div class="element" style="grid-row: 5;grid-column: 1;">Rb <br><span>Rubidium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 2;">Sr <br><span>Strontium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 3;">Y <br><span>Yttrium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 4;">Zr <br><span>Zirconium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 5;">Nb <br><span>Niobium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 6;">Mo <br><span>Molybdenum</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 7;">Tc <br><span>Technetium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 8;">Ru <br><span>Ruthenium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 9;">Rh <br><span>Rhodium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 10;">Pd <br><span>Palladium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 11;">Ag <br><span>Silver</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 12;">Cd <br><span>Cadmium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 13;">In <br><span>Indium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 14;">Sn <br><span>Tin</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 15;">Sb <br><span>Antimony</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 16;">Te <br><span>Tellurium</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 17;">I <br><span>Iodine</span></div>
+            <div class="element" style="grid-row: 5;grid-column: 18;">Xe <br><span>Xenon</span></div>
+
+            <div class="element" style="grid-row: 6;grid-column: 1;">Cs <br><span>Cesium</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 2;">Ba <br><span>Barium</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 3;">Lu <br><span>Lutetium</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 4;">Hf <br><span>Hafnium</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 5;">Ta <br><span>Tantalum</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 6;">W <br><span>Tungsten</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 7;">Re <br><span>Rhenium</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 8;">Os <br><span>Osmium</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 9;">Ir <br><span>Iridium</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 10;">Pt <br><span>Platinum</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 11;">Au <br><span>Gold</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 12;">Hg <br><span>Mercury</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 13;">Tl <br><span>Thallium</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 14;">Pb <br><span>Lead</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 15;">Bi <br><span>Bismuth</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 16;">Po <br><span>Polonium</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 17;">At <br><span>Astatine</span></div>
+            <div class="element" style="grid-row: 6;grid-column: 18;">Rn <br><span>Radon</span></div>
+
+            <div class="element" style="grid-row: 7;grid-column: 1;">Fr <br><span>Francium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 2;">Ra <br><span>Radium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 3;">Lr <br><span>Lawrencium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 4;">Rf <br><span>Rutherfordium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 5;">Db <br><span>Dubnium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 6;">Sg <br><span>Seaborgium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 7;">Bh <br><span>Bohrium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 8;">Hs <br><span>Hassium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 9;">Mt <br><span>Meitnerium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 10;">Ds <br><span>Darmstadtium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 11;">Rg <br><span>Roentgenium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 12;">Cn <br><span>Copernicium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 13;">Nh <br><span>Nihonium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 14;">Fl <br><span>Flerovium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 15;">Mc <br><span>Moscovium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 16;">Lv <br><span>Livermorium</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 17;">Ts <br><span>Tennessine</span></div>
+            <div class="element" style="grid-row: 7;grid-column: 18;">Og <br><span>Oganesson</span></div>
+
+        </div>
+
+        <!-- Right division -->
+        <div class="right-div">
+            <div class="alkali-metal box">
+                <p>Alkali Metal</p>
+            </div>
+            <div class="alkaline-earth box">
+                <p>Alkaline Earth Metal</p>
+            </div>
+            <div class="actinide box">
+                <p>Actinide</p>
+            </div>
+            <div class="lanthanide box">
+                <p>Lanthanide</p>
+            </div>
+            <div class="transition-metal box">
+                <p>Transition Metal</p>
+            </div>
+            <div class="post-transition-metal box">
+                <p>Post Transition Metal</p>
+            </div>
+            <div class="metalloid box">
+                <p>Metalloid</p>
+            </div>
+            <div class="reactive-non-metal box">
+                <p>Reactive Non Metal</p>
+            </div>
+            <div class="noble-gas box">
+                <p>Noble Gas</p>
+            </div>
+            <div class="unknown box">
+                <p>Unknown</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom division -->
+    <div class="bottom-div">
+
+    </div>
+</body>
+
+</html>
